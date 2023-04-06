@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Omni - Account Creation</title>
+    <meta name="description" content="A database for gamers to store their info">
+    <meta name="author" content="Crossroads Digital Imaging">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">The Omni</a>
+            </div>
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="characters" href="charc.html">Characters</a></li>
+                <li><a id="worlds" href="worldc.html">Worlds</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Legend Begins Here</h2>
+        <p>
+            Create an account to start managing your tabletop and online gaming worlds.
+        </p>
+        <form id="signup-form">
+            <label for="suname">Name:</label>
+            <input type="text" id="suname" required>
+            <br>
+            <label for="suage">Age:</label>
+            <input type="number" id="suage" required>
+            <br>
+            <label for="years-xp">Years of XP:</label>
+            <input type="number" id="years-xp" required>
+            <br>
+            <label for="suusername">Username:</label>
+            <input type="text" id="suusername" required>
+            <br>
+            <label for="supassword">Password:</label>
+            <input type="password" id="supassword" required>
+            <br>
+            <label for="known-systems">Known Systems:</label>
+            <textarea id="known-systems" name="known-systems" rows="10" cols="50" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
