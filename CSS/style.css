@@ -1,4 +1,218 @@
 body {
-	background-color: #e5e7eb;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #969796;
+	background: url(/images/parchment.svg) no-repeat;
+	background-size: cover;
+}  
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	padding: 0.5rem;
 }
+.logo a{
+	color:#fff;
+	font-size: 2rem;
+	font-family: 'Fasthand', cursive;
+	text-decoration: none;
+	padding-left: 0.5rem;
+}
+.logo a:visited {
+	color:#fff;
+	font-size: 2rem;
+	font-family: 'Fasthand', cursive;
+	text-decoration: none;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li {
+	float: left;
+	list-style-type: none;
+}
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+nav li a:hover {
+	background-color: #111;
+}
+.active {
+	background-color: #587958;
+}
+main{
+	text-align: center;
+	margin-top: 3rem;
+}
+.welcome {
+	font-size: 5rem;
+	font-family: 'Fasthand', cursive;
+	margin: 0;
+}
+main p{
+	font-family: 'Delicious Handrawn', cursive;
+	font-size: 1.7rem;
+}
+#get-started{
+	font-size: 3rem;
+}
+.buttons {
+	margin-top: 2rem;
+}
+button {
+	padding: 1rem 2rem;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #587958;
+}
+  
+
+/* Character Creation */
+
+h2{
+	font-family: 'Delicious Handrawn', cursive;
+	font-size: 1.7rem;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	align-items: center;
+}
+  
+label {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+  
+input,
+textarea{
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 0.25rem;
+
+}
+#charbtn{
+	width: 50%;
+}
+
+
+/* World Creation */
+h2{
+	font-family: 'Delicious Handrawn', cursive;
+	font-size: 1.7rem;
+}
+form label {
+	display: block;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+form input,
+form textarea {
+	display: block;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	border: none;
+	width: 50%;
+}
+
+input[id="game-name"], input[id="system"], input[id="genre"], input[id="character-name"], input[id="class"]
+{
+	margin-right: 17rem;
+	width: 25%;
+} 
+
+label[for="character-name"], label[for="class"], label[for="game-name"], label[for="genre"], label[for="system"]{
+	margin-right: 18rem;
+}
+
+#wrldbtn{
+	width: 50%;
+}
+
+/* Log in  */
+
+input[id="username"], input[id="password"]{
+	width: 25%;
+}
+#loginbtn{
+	width: 25%;
+	margin-left: 1rem;
+}
+
+/* Sign up */
+
+input[id="suname"], input[id="suage"], input[id="years-xp"], input[id="known-systems"], input[id="suusername"], input[id="supassword"]
+{
+	width: 25%;
+} 
+
+
+
+ @media only screen and (max-width: 768px) {
+    nav a {
+		font-size: 1.5rem;
+	}
+	nav li {
+  		float: none;
+	}
+
+  	#login-form, #signup-form {
+  		max-width: none;
+	}
+  
+
+ 
+	nav {
+	  padding: 2rem;
+	}
+	
+	form {
+	  max-width: 600px;
+	  margin: auto;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+
+
+
+ 	header {
+		padding: 20px 40px;
+	}
+
+	nav {
+		margin-bottom: 20px;
+	}
+
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	form {
+		flex: 1;
+		margin-right: 20px;
+	}
+
+	form:last-child {
+		margin-right: 0;
+	}
