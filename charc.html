@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Omni - Character Database</title>
+    <meta name="description" content="A database for gamers to store their info">
+    <meta name="author" content="Crossroads Digital Imaging">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">The Omni</a>
+            </div>
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="characters" href="#" class="active">Characters</a></li>
+                <li><a id="worlds" href="worldc.html">Worlds</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Character Database Entry</h2>
+        <form id="character-form">
+            <label for="character-name">Character Name:</label>
+            <input type="text" id="character-name" name="character-name" required>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="10" cols="50" required></textarea>
+
+            <button id="charbtn" type="submit">Save</button>
+        </form>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
