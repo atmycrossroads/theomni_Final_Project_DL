@@ -80,7 +80,57 @@ button {
 button:hover {
 	background-color: #587958;
 }
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	color: #fff;
+	padding: 1rem;
+  }
   
+  .hidden {
+	display: none;
+  }
+  
+  
+  footer:hover>div{
+	  display: block;
+  }
+  
+  
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+	background-color: darkgray;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 50%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+  }
+  
+  .accactive, .accordion:hover {
+	background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden; 
+	color: black;
+	width: 46.5%;
+  }
+  
+
+
 
 /* Character Creation */
 

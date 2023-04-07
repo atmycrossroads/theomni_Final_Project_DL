@@ -1,6 +1,29 @@
 // With no actual back end server and database I made placeholder functions for submissions. I hope to build onto this starting code if I pass this class and get to move onto the next.
 
 
+//Accordian box script. Works in Brackets IDE but not VS Code and I dont know why.
+
+const acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle add/remove "accactive" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("accactive");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+
 // Login form submission handler
 document.getElementById("login-form").addEventListener("submit", function(event) {
   event.preventDefault();
@@ -22,7 +45,7 @@ function validateCredentials(username, password) {
 }
 
 document.getElementById("create-account").addEventListener("click", function() {
-  window.location.href = "acctcreation.html";
+  window.location.href = "signup.html";
 });
 
 
@@ -81,4 +104,5 @@ function saveWorldDataToServer(gameName, genre, system, worldDescription) {
   //placeholder for server request to save data.
   console.log("World data saved:", { gameName, genre, system, worldDescription });
 }
+
 
